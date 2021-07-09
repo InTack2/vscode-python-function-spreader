@@ -19,7 +19,20 @@
         "command": "python-print-spreader.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "PythonFunctionSpreader",
+      "properties": {
+        "python-print-spreader.target-function": {
+          "type": "array",
+          "default": [
+            "print(\"${word}\", ${word})",
+            "logger.info('${word}', ${word})"
+          ],
+          "description": "target language."
+        }
+      }
+    }
   },
   "scripts": {
     "lint": "eslint .",
@@ -36,5 +49,18 @@
     "mocha": "^8.4.0",
     "typescript": "^4.3.2",
     "vscode-test": "^1.5.2"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InTack2/vscode-python-function-spreader.git"
+  },
+  "author": "Tack2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/InTack2/vscode-python-function-spreader/issues"
+  },
+  "homepage": "https://github.com/InTack2/vscode-python-function-spreader#readme"
 }
