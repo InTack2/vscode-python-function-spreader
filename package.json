@@ -1,9 +1,10 @@
 {
   "publisher": "Tack2",
   "name": "python-function-spreader",
+  "icon": "images/logo.png",
   "displayName": "Python function Spreader",
   "description": "You can easily add multiple Python print statements.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.57.0"
   },
