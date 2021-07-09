@@ -1,5 +1,5 @@
 # Python Function Spreader
-[Japanese version](./README_jp.md)
+[Japanese version](./README_jp.md)  
 Allows you to spread a function over a specified range of words.
 
 
@@ -22,6 +22,6 @@ We have not tested this on Linux.
 ### 0.0.1
 Initial release.
 
-## 今後の予定
+## Known Issues
 * [ ] Make it easier to specify functions.
 * [ ] Memorize the executed part, and turn it on/off later.
