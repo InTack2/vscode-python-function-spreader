@@ -1,6 +1,7 @@
 {
-  "name": "python-print-spreader",
-  "displayName": "PythonPrintSpreader",
+  "publisher": "Tack2",
+  "name": "python-function-spreader",
+  "displayName": "Python function Spreader",
   "description": "You can easily add multiple Python print statements.",
   "version": "0.0.1",
   "engines": {
@@ -9,21 +10,31 @@
   "categories": [
     "Other"
   ],
+  "bugs": {
+    "url": "https://github.com/InTack2/vscode-python-function-spreader/issues"
+  },
   "activationEvents": [
-    "onCommand:python-print-spreader.helloWorld"
+    "onCommand:python-function-spreader.execute-spreader"
   ],
   "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InTack2/vscode-python-function-spreader.git"
+  },
+  "keywords": [
+    "python"
+  ],
   "contributes": {
     "commands": [
       {
-        "command": "python-print-spreader.helloWorld",
-        "title": "Hello World"
+        "command": "python-function-spreader.execute-spreader",
+        "title": "Python Function Spreader: Execute"
       }
     ],
     "configuration": {
-      "title": "PythonFunctionSpreader",
+      "title": "Python Function Spreader",
       "properties": {
-        "python-print-spreader.target-function": {
+        "python-function-spreader.function-list": {
           "type": "array",
           "default": [
             "print(\"${word}\", ${word})",
@@ -33,11 +44,6 @@
         }
       }
     }
-  },
-  "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
   },
   "devDependencies": {
     "@types/glob": "^7.1.3",
@@ -50,17 +56,6 @@
     "typescript": "^4.3.2",
     "vscode-test": "^1.5.2"
   },
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/InTack2/vscode-python-function-spreader.git"
-  },
-  "author": "Tack2",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/InTack2/vscode-python-function-spreader/issues"
-  },
   "homepage": "https://github.com/InTack2/vscode-python-function-spreader#readme"
 }
